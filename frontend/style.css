@@ -1,0 +1,151 @@
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f2ff; /* Light background for a softer look */
+    color: #333; /* Dark text color */
+}
+
+/* Center the form and give it a card-like appearance */
+form {
+    background: white; /* White background for the form */
+    padding: 30px; /* Increased space inside the form */
+    border-radius: 12px; /* More rounded corners for a modern feel */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for depth */
+    max-width: 400px; /* Max width for form */
+    margin: 50px auto; /* Center the form on the page */
+}
+
+/* Heading styles */
+h1 {
+    text-align: center; /* Center the heading */
+    color: #5c6bc0; /* Blue color for the heading */
+    font-size: 36px; /* Larger font size for more impact */
+    margin-bottom: 20px; /* Space below the heading */
+    font-family: 'Freckle Face', cursive; /* Comic font */
+    position: relative; /* Position relative for pseudo-element */
+    overflow: hidden; /* Prevent overflow */
+    letter-spacing: 2px; /* Increase space between letters */
+}
+
+/* Create an arched effect */
+h1:before {
+    content: ''; /* Empty content */
+    position: absolute; /* Absolute positioning */
+    left: 0; /* Align to left */
+    right: 0; /* Align to right */
+    top: -15px; /* Adjust top to control arch height */
+    height: 15px; /* Adjust height of arch */
+    background: linear-gradient(to right, transparent, #5c6bc0, transparent); /* Arch color */
+    border-radius: 50%; /* Create a circular shape */
+}
+
+/* Label styles */
+label {
+    margin-bottom: 8px; /* Space below labels */
+    display: block; /* Labels on a new line */
+    font-weight: bold; /* Bold labels */
+    color: #555; /* Darker gray color for labels */
+}
+
+/* Input styles */
+input {
+    width: 100%; /* Full width inputs */
+    padding: 12px; /* Increased padding for comfort */
+    margin-bottom: 15px; /* Space below inputs */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 6px; /* Rounded borders */
+    font-size: 14px; /* Font size for better readability */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for border */
+}
+
+/* Focus effect on inputs */
+input:focus {
+    border-color: #5c6bc0; /* Change border color when focused */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(92, 107, 192, 0.5); /* Subtle shadow on focus */
+}
+
+/* Button styles */
+button {
+    background-color: #5c6bc0; /* Button color */
+    color: white; /* Text color */
+    border: none; /* No border */
+    border-radius: 6px; /* Rounded corners */
+    padding: 12px; /* Increased inner padding */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for background and scaling */
+    width: 100%; /* Full width button */
+    font-size: 16px; /* Font size for better readability */
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #4f5b93; /* Darker shade on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Button container for consistent sizing */
+.button-container {
+    max-width: 400px; /* Match the form width */
+    margin: 0 auto; /* Center the button */
+    margin-top: 20px; /* Space above the button */
+}
+
+/* Add a spacing button */
+button + button {
+    margin-top: 10px; /* Space between buttons */
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    form {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+
+    h1 {
+        text-align: center; /* Center the heading */
+        color: #5c6bc0; /* Blue color for the heading */
+        font-size: 36px; /* Larger font size for more impact */
+        margin-bottom: 20px; /* Space below the heading */
+        font-family: 'Freckle Face', cursive; /* Comic font */
+        position: relative; /* Position relative for pseudo-element */
+        overflow: hidden; /* Prevent overflow */
+        letter-spacing: 2px; /* Increase space between letters */
+    }
+    
+    /* Create an arched effect */
+    h1:before {
+        content: ''; /* Empty content */
+        position: absolute; /* Absolute positioning */
+        left: 0; /* Align to left */
+        right: 0; /* Align to right */
+        top: -15px; /* Adjust top to control arch height */
+        height: 15px; /* Adjust height of arch */
+        background: linear-gradient(to right, transparent, #5c6bc0, transparent); /* Arch color */
+        border-radius: 50%; /* Create a circular shape */
+    }
+}
+/* Specific styles for the Get All Users button */
+.get-users-button {
+    background-color: #098c06; /* Red color */
+    max-width: 400px; /* Match the form width */
+    margin: 20px auto; /* Center the button */
+    display: block; /* Makes the button a block element */
+    padding: 12px; /* Padding for button size */
+    font-size: 16px; /* Font size for consistency */
+    border-radius: 6px; /* Rounded corners */
+    color: white; /* Text color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+/* Hover effect for the Get All Users button */
+.get-users-button:hover {
+    background-color: #098c06; /* Darker shade of red on hover */
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add a shadow effect on hover */
+    color: #fff; /* Ensure text remains white */
+}
